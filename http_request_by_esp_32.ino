@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>  
  //int a;
-const char* ssid = "ding dong";
-const char* password =  "12120303";
+const char* ssid = "enter your ssid";
+const char* password =  "enter your password";
  
 void setup() {
  
@@ -32,7 +32,7 @@ void loop() {
 
     HTTPClient http;
  
-    http.begin("https://maker.ifttt.com/trigger/IndianArmy/with/key/ihnGg6Xjv4w_h7yt96sfB8htcyGT52132W9aKHRBI4L"); //Specify the URL
+    http.begin("https://maker.ifttt.com/trigger/enter the event name/with/key/enter the key"); //Specify the URL
     int httpCode = http.GET();                                        //Make the request
    Serial.println("Pin triggered");
 
