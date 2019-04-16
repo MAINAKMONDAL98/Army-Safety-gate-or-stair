@@ -73,7 +73,7 @@ lcd.clear();//Clean the screen
   Serial.println();
   Serial.print("Message : ");
   content.toUpperCase();
-  if ((content.substring(1) == "9B F5 43 0E" ||"9B 58 90 0D")&&(a>=500)) //change here the UID of the card/cards that you want to give access
+  if ((content.substring(1) == "9B F5 73 0E" ||"9B 58 91 0D")&&(a>=500)) //change here the UID of the card/cards that you want to give access
   { lcd.backlight();
     Serial.println("Authorized access");
     lcd.setCursor(0,0); //Defining positon to write from first row,first column .
